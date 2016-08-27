@@ -51,7 +51,7 @@ public class HTTPDataRequest {
                 // Disconnect the HttpURLConnection
                 urlConnection.disconnect();
             } else {
-                Log.e("HTTPDataRequest", String.valueOf(urlConnection.getResponseCode()));
+                Log.e("HttPDataRequest", String.valueOf(urlConnection.getResponseCode()));
             }
         } catch (MalformedURLException e) {
             e.printStackTrace();

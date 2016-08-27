@@ -16,6 +16,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="24sp"
         android:layout_marginBottom="2dp"
+        android:ellipsize="end"
         tools:text="Title"
         />
 
@@ -26,6 +27,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="16sp"
         android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
         tools:text="Section"
         />
 
@@ -35,6 +38,20 @@
         android:id="@+id/date_view"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="16sp"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
         tools:text="Date"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/author_view"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        tools:text="Author"
         />
 </LinearLayout>

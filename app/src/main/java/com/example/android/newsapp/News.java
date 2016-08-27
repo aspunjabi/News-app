@@ -13,12 +13,22 @@ public class News {
 
     private String mWebUrl;
 
+    private String mAuthor;
+
+    public News(String title, String sectionName, String date, String webUrl, String author) {
+        mTitle = title;
+        mSectionName = sectionName;
+        mDate = date;
+        mWebUrl = webUrl;
+        mAuthor = author;
+    }
+
     public News(String title, String sectionName, String date, String webUrl) {
         mTitle = title;
         mSectionName = sectionName;
         mDate = date;
         mWebUrl = webUrl;
-    }
+      }
 
     public String getTitle() { return mTitle; }
 
@@ -27,5 +37,13 @@ public class News {
     public String getDate() { return mDate; }
 
     public String getWebUrl() { return mWebUrl; }
+
+    public String getAuthorName() {
+        if (mAuthor != null) {
+            return mAuthor;
+        } else {
+            return "Author unknown";
+        }
+    }
 }
 

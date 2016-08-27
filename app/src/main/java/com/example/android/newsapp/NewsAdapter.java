@@ -38,11 +38,14 @@ public class NewsAdapter extends ArrayAdapter {
         newsSection.setText(section);
 
         TextView newsDate = (TextView) listItemView.findViewById(R.id.date_view);
-        String date = thisItem.getSectionName();
+        String date = thisItem.getDate();
         newsDate.setText(date);
 
-        return listItemView;
+        TextView newsAuthor = (TextView) listItemView.findViewById(R.id.author_view);
+        String author = thisItem.getAuthorName();
+        newsAuthor.setText(author);
 
+        return listItemView;
     }
 
 }
